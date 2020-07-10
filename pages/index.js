@@ -9,16 +9,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
-          Welcome to my site!
-        </h1>
+        <div className="text-4xl">
+          This is eventually going to be a really cool personal site, I swear!
+        </div>
 
       </main>
-
-      <footer>
-       Footer!
-      </footer>
-
     </div>
   )
 }
