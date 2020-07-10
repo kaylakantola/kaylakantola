@@ -12,7 +12,7 @@ export default function Home() {
         <div className="text-4xl">
           This is eventually going to be a really cool personal site, I swear!
         </div>
-
+      <img src="/images/kayla_square.png" alt="kayla" style={{height: '400px'}}/>
       </main>
     </div>
   )
