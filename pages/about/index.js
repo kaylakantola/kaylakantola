@@ -1,6 +1,8 @@
+import React from "react";
+import WipPage from '../../components/wip'
 
 function About() {
-  return <div>About</div>
+  return <WipPage title={"ABOUT"}/>
 }
 
 export default About

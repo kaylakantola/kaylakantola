@@ -3,9 +3,11 @@ import NavBar from '../navbar'
 
 export default function Layout({ children}) {
   return (
-    <div className='flex-col font-nunito w-screen h-screen'>
-      <NavBar />
-      <div className='flex flex-col flex-1 w-full p-4'>
+    <div className='flex  flex-row font-nunito w-screen h-screen'>
+      <div className='flex-col w-2/12 '>
+        <NavBar />
+      </div>
+      <div className='flex-col w-10/12 p-6'>
         {children}
       </div>
     </div>
