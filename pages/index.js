@@ -47,6 +47,12 @@ const TechStack = ({stack}) => (<div className={"flex flex-row flex-wrap"}>
     ))}
 </div>)
 
+const Blurb = ({children}) => (
+  <div className="p-4 flex flex-col justify-center align-center text-espresso-dark">
+    {children}
+  </div>
+)
+
 export default function Home() {
   return (
     <div className="font-nunito">
@@ -60,14 +66,24 @@ export default function Home() {
         </div>
         <div className={"grid grid-cols-1 lg:grid-cols-2 gap-6 my-5 text-espresso-dark"}>
 
+          <DisplayItem title={"Here's a little about me personally:"}>
+            <Blurb>
+              I am from Boston, MA and am legally obligated to cheer for the Pats despite knowing very little about sports. My loving engineer parents were deeply supportive of my artistic ambitions and so I went to film school, which I now consider to be an exceptionally fun mistake. After 5 years in Los Angeles I said "actually, I hate this!" and learned how to write code. My wife and I moved to Charleston, SC to be closer to family, I took a JS bootcamp, and now I am a very happy software developer.
+            </Blurb>
+          </DisplayItem>
+
+          <DisplayItem title={"Here's a little about me professionally:"}>
+            <Blurb>
+              Kayla Kantola is a professional business woman who wakes up every day and screams, "SYNERGY!". She drinks fourteen pots of coffee each morning and slams her fist enthusiastically on the bottom line. She's circling back on that last email before it's even been sent. What's that I hear in the distance? Ahh, yes, the beautiful sound of streamlined optimization. 
+            </Blurb>
+          </DisplayItem>
+
         <DisplayItem title={"Here's what I know how to use:"}>
           <TechStack stack={mainStack}/>
-
         </DisplayItem>
 
         <DisplayItem title={"Here's what I'm learning:"}>
           <TechStack stack={learnStack}/>
-
         </DisplayItem>
 
         </div>
