@@ -1,15 +1,17 @@
 import React from 'react'
 import NavBar from '../navbar'
 
-export default function Layout({ children}) {
+export default function Layout({ children }) {
   return (
-    <div className='flex  flex-row font-nunito w-screen  h-100 lg:h-screen'>
-      <div className='flex-col w-2/12  h-100 lg:h-screen'>
+    <div className='flex flex-col md:flex-row font-nunito w-screen'>
+      <div className='flex-row w-full md:flex-col md:w-2/12 md:h-screen'>
         <NavBar />
       </div>
-      <div className='flex-col w-10/12 p-6 h-100 lg:h-screen bg-salmon-dark '>
+      <div className='flex-col p-6 w-100 md:w-10/12  '>
         {children}
       </div>
     </div>
   )
 }
+
+
