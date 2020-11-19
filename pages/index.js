@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {DisplayItem} from '../components/display'
+import {DisplayItem, Blurb} from '../components/display'
 import React from "react";
 
 const mainStack = [
@@ -48,11 +48,7 @@ const TechStack = ({stack}) => (<div className={"flex flex-row flex-wrap"}>
     ))}
 </div>)
 
-const Blurb = ({children}) => (
-  <div className="p-4 flex flex-col justify-center align-center text-espresso-dark">
-    {children}
-  </div>
-)
+
 
 const Resume = () => (
   <div className="p-4 flex flex-col justify-center align-center text-espresso-dark">
@@ -102,14 +98,18 @@ export default function Home() {
             <TechStack stack={learnStack}/>
           </DisplayItem>
 
-
         </div>
+
+      </main>
+    </div>
+  )
+}
+
+
+/*
         <div className={"grid grid-cols-1 gap-6 my-5 text-espresso-dark"}>
           <DisplayItem title={"Here's my resumé:"}>
             <Resume/>
           </DisplayItem>
         </div>
-      </main>
-    </div>
-  )
-}
+ */
