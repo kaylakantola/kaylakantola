@@ -12,5 +12,5 @@ export default async (req, res) => {
 
   const n = getRandomIntInclusive(0, animals.length - 1)
   const animal = animals[n]
-  res.json(`Healthy as spry young ${animal}!`)
+  res.json(`Healthy as a spry young ${animal}!`)
 }
