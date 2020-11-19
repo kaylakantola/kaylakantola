@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-const links = ['projects']
+const links = ['projects', 'status']
 
 
 
@@ -19,7 +19,7 @@ export default function NavBar(props) {
       <div className="w-full  text-xs justify-left text-salmon-light invisible md:visible">Software Engineer</div>
       <div className={`flex w-full flex-col text-center md:text-justify md:py-4  `}>
         {links.map(link => (
-          <Link href={`/${link}`}>
+          <Link key={link} href={`/${link}`}>
             <a className={`${router.pathname.includes(link) ? 'font-bold' : 'font-thin hover:underline'} cursor-pointer capitalize py-2 text-md`}>
               {link}
             </a>
