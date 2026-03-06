@@ -1,1 +1,0 @@
-Merge into master and vercel will kick off the ci/cd process

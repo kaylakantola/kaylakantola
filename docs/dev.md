@@ -1,3 +1,0 @@
-To start:
-
-```yarn dev```
